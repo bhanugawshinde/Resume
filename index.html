@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhanu Gawshinde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function () {
+            document.getElementById("download").addEventListener("click", () => {
+                const resume = this.document.getElementById("resume");
+                console.log(resume);
+                var opt = {
+                    margin: 0,
+                    filename: 'myfile.pdf',
+                    image: { type: 'jpeg', quality: 0.7 },
+                    html2canvas: { scale: 2 },
+                    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+                }
+                html2pdf().from(resume).set(opt).save();
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <button id="download">download</button>
+    <div class="container">
+        <div id="resume" class="Resume">
+            <div class="two">
+                <div class="img">
+                    <img src="profile.png" alt="profile img">
+                </div>
+                <div class="Details">
+                    <h2 class="title">PERSONAL DETAILS</h2>
+                    <ul>
+                        <li>
+                            <span class="personal">DOB</span>
+                            <span class="text">10/10/1999</span>
+                        </li>
+                        <li>
+                            <span class="personal">Age</span>
+                            <span class="text">22 year</span>
+                        </li>
+                        <li>
+                            <span class="personal">Address</span>
+                            <span class="text">
+                                <Address>Narmada Nagar, Khargone</Address>
+                            </span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="Details">
+                    <h2 class="title">contact</h2>
+
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text">9685325783</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="text">bhanugawshinde@gmail.com
+                            </span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                            <span class="text"><a href="https://www.linkedin.com/in/bhanu-gawshinde-357051229">https://www.linkedin.com/in/<br>bhanu-gawshinde-357051229</a></span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">UJJAIN, MADHYA PRADESH</span>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+                <div class="Details">
+                    <h2 class="title">language</h2>
+                    <ul>
+                        <li>
+                            <span class="text">HINDI</span>
+                        </li>
+                        <li>
+                            <span class="text">ENGLISH</span>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="Details">
+                    <h2 class="title">PROJECTS</h2>
+                    <ul>
+                        <li>
+                            <span class="text">Connect Four
+                                <a href="https://github.com/bhanugawshinde/Connect-Four">https://github.com/bhanu gawshinde/Connect-Four</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="text">Temperature Convert
+                                <a href="https://github.com/bhanugawshinde/Temperature-Convert">https://github.com/bhanu gawshinde/Temperature-Convert</a>
+                            </span>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="Details">
+                    <h2 class="title">Interests</h2>
+
+                    <ul>
+                        <li><span class="text">Chess</span></li>
+                        <li><span class="text">Gardening</span></li>
+                        <li><span class="text">Reading Books</span></li>
+                        <li><span class="text">Travel</span></li>
+                        <li><span class="text">Music</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="name">
+                    <h1>Bhanu Gawshinde</h1>
+                    <span>Software Engineering Student</span>
+                </div>
+                <div class="careerDetail">
+                    <div class="title">
+                        <h2>OBJECTIVE:</h2>
+                        <p>Entry-level developer role in any functional area as fresher to make an effective and significant contribution towards the organization's growth and welfare. To put all my effort and knowledge to ensure the best output and making the organization reach the great position.</p>
+                    </div>
+                </div>
+
+                <div class="careerDetail">
+                    <div class="title">
+                        <h2>Education</h2>
+                        <ul>
+                            <h3>B.Tech, Computer Science & Engineering</h3>
+                            <li>Govt Engineering College, Ujjain</li>
+                            <li>2019 - 2023</li>
+                            <li>CGPA : 7.24/10</li>
+                        </ul>
+                        <ul>
+                            <h3>Senior Secondary (XII), Science</h3>
+                            <li>Devi Ahilya Govt. Excellence H.S.S. No. 1 Khargone</li>
+                            <li>(MP BOARD board)</li>
+                            <li>Year of completion: 2017</li>
+                            <li>Percentage: 78.40%</li>
+                        </ul>
+                        <ul>
+                            <h3>Secondary (X)</h3>
+                            <li>Devi Ahilya Govt. Excellence H.S.S. No. 1 Khargone</li>
+                            <li>(MP BOARD board)</li>
+                            <li>Year of completion: 2015</li>
+                            <li>Percentage: 75.60%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="careerDetail">
+                    <h2 class="title">Skills</h2>
+                    <ul>
+                        <li class="skills">
+                            <div class="SkillName">Core Java</div>
+                            <div class="Range">
+                                <div class="persentage" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills">
+                            <div class="SkillName">HTML</div>
+                            <div class="Range">
+                                <div class="persentage" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills">
+                            <div class="SkillName">CSS</div>
+                            <div class="Range">
+                                <div class="persentage" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills">
+                            <div class="SkillName">Java Script</div>
+                            <div class="Range">
+                                <div class="persentage" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills">
+                            <div class="SkillName">C Language</div>
+                            <div class="Range">
+                                <div class="persentage" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills">
+                            <div class="SkillName">Data Structures</div>
+                            <div class="Range">
+                                <div class="persentage" style="width: 60%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="careerDetail" >
+                    <div class="title"> </div>
+                        <h2>Traning & Courses</h2>
+                        <div class="Trainings">
+                            <ul>
+                                <h3>Core Java</h3>
+                                <li>Internshala Trainings, Online</li>
+                                <li>1 Jul 2022 - 18 Jul 2022</li>
+                                <li>certificate: <a href="https://drive.google.com/file/d/1Id7H1IeVgSoDCGgg9HGs9B5CgxZtkE1E/view?usp=drivesdk">https://drive.google.com/file/d<br>/1Id7H1IeVgSoDCGgg9<br>HGs9B5CgxZtkE1E/view?usp=drivesdk</a> </li>
+                            </ul>
+                            <ul>
+                                <h3>Web Scraping</h3>
+                                <li>Coding Minutes, Online</li>
+                                <li>1 Jul 2022 - 18 Jul 2022</li>
+                                <li>certificate: <a href="https://drive.google.com/file/d/1IYSi3rxq34ouwUQg7YHUTzLFtWGvmMzZ/view?usp=drivesdk">https://drive.google.com/file/<br>d/1IYSi3rxq34ouwUQg7Y<br>HUTzLFtWGvmMzZ/view?usp=drivesdk</a></li>
+                            </ul>
+                        </div>
+                       
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
